@@ -1,1 +1,26 @@
 
+pipeline {
+    agent any   // Runs on any available Jenkins agent
+
+    stages {
+        stage('build') {
+            steps {
+                echo 'hello from build'
+            }
+        }
+
+        stage('test') {
+            steps {
+                echo "hello from test"
+                
+            }
+        }
+
+        stage('deploy') {
+            steps {
+                echo "hello from deploy"
+        
+            }
+        }
+    }
+}
