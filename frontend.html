@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganeah Jadhav| DevOps Engineer & Cloud Architect</title>
+    <meta name="description" content="Portfolio of Alex Rivera, a DevOps Engineer and Cloud Architect specializing in AWS, Kubernetes, and Automation.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">&lt;Alex/&gt;</a>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Stack</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <span class="icon">🌙</span>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-greeting">Hello, world! I am</span>
+                <h1 class="hero-title">Ganeah Jadhav</h1>
+                <h2 class="hero-subtitle">I build <span class="typing-text text-highlight"></span></h2>
+                <p class="hero-description">
+                    Specializing in building robust cloud infrastructure, automating deployment pipelines, and ensuring high availability for mission-critical applications.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">bash — 80x24</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-output">
+                        <!-- Javascript will populate this -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-img-wrapper">
+                    <div class="about-img">
+                        <!-- USER: Replace this image with your own photo at assets/images/profile.jpg -->
+                        <img src="assets/images/profile.png" alt="Alex Rivera">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Architecting the Future of Cloud</h3>
+                    <p style="margin-bottom: 1rem;">
+                        With over 8 years of experience in the tech industry, I've transitioned from Full Stack Development to mastering DevOps and Cloud Architecture. I am passionate about <strong>Infrastructure as Code</strong>, <strong>CI/CD automation</strong>, and <strong>Cloud Security</strong>.
+                    </p>
+                    <p>
+                        I help organizations scale their infrastructure, reduce costs, and improve deployment frequency using modern cloud-native technologies.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" style="background-color: var(--card-bg);">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <!-- Cloud & DevOps -->
+                <div class="skill-card">
+                    <h3><i class="fas fa-cloud text-highlight"></i> Cloud & DevOps</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">GitLab CI</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Scripting -->
+                <div class="skill-card">
+                    <h3><i class="fas fa-code text-highlight"></i> Backend & Scripting</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash/Shell</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Django</span>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Database -->
+                <div class="skill-card">
+                    <h3><i class="fas fa-database text-highlight"></i> Data & Monitoring</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">ELK Stack</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400/1e1e1e/ffffff?text=K8s+Cluster+Automation" alt="Kubernetes Automation">
+                    </div>
+                    <div class="project-content">
+                        <h3>Auto-Scaling K8s Cluster</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">
+                            Designed and deployed a highly available Kubernetes cluster on AWS using EKS and Terraform, featuring auto-scaling and self-healing capabilities.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">AWS EKS</span>
+                            <span class="project-tag">Terraform</span>
+                            <span class="project-tag">Helm</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github link-icon"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt link-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400/1e1e1e/ffffff?text=CI%2FCD+Pipeline" alt="CI/CD Pipeline">
+                    </div>
+                    <div class="project-content">
+                        <h3>Serverless CI/CD Pipeline</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">
+                            Implemented a serverless CI/CD pipeline using AWS CodePipeline and Lambda to automate deployments for microservices, reducing deployment time by 60%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">AWS Lambda</span>
+                            <span class="project-tag">CodePipeline</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github link-icon"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt link-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400/1e1e1e/ffffff?text=Infrastructure+Monitoring" alt="Monitoring System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Centralized Logging & Monitoring</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">
+                            Built a centralized logging and monitoring solution using the ELK stack and Prometheus/Grafana to provide real-time insights into system health.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Elasticsearch</span>
+                            <span class="project-tag">Grafana</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github link-icon"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt link-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background-color: var(--bg-color);">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 1.5rem;">Let's Connect</h3>
+                    <p style="margin-bottom: 2rem; color: var(--text-light);">
+                        I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>alex@rivera.dev</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA (Remote)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/alexrivera</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p style="color: var(--text-light);">&copy; 2025 Alex Rivera. Built with <i class="fas fa-heart text-highlight"></i> and DevOps.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
