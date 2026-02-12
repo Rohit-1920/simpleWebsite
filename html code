@@ -15,6 +15,7 @@
     <h1 class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
       MyWebsite
     </h1>
+<h1>Welcome to My World</h1>
     <nav class="space-x-6 font-medium">
       <a href="#" class="hover:text-blue-600 transition">Home</a>
       <a href="#" class="hover:text-blue-600 transition">About</a>
